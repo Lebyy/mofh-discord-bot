@@ -45,10 +45,7 @@ return msg.channel.send(`**:x: | You don't have enough permissionns to run this 
 let prefix = config.prefix;
 let username = args[0]
 let password = args[1]
-if (!username){
-  return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}resetpassword [username] [newpassword]\` - Example \`${prefix}resetpassword lebyydev lebyyiscool\`**`)
-}
-if (!password){
+if (!username || !password){
   return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}resetpassword [username] [newpassword]\` - Example \`${prefix}resetpassword lebyydev lebyyiscool\`**`)
 }
     var result = null;
