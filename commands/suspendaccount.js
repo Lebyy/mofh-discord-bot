@@ -40,18 +40,14 @@ function isset(accessor) {
     }
 }
 exports.run = async(client, msg, args) => {
-if (!msg.member.hasPermission("ADMINISTRATOR"))
-return msg.channel.send(`**:x: | You don't have enough permissionns to run this command**`);
+if (!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(`**:x: | You don't have enough permissionns to run this command**`)
 let prefix = config.prefix;
 let username = args[0]
 let reason = args[1]
-if (!username){
+if (!username || !reason){
   return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}suspendaccount [username] [reason]\` - Example \`${prefix}suspendaccount lebyydev badboy\`**`)
 }
-if (!reason){
-  return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}suspendaccount [username] [reason]\` - Example \`${prefix}suspendaccount lebyydev badboy\`**`)
-}
-      var result = null;
+    var result = null;
     var res = {};
     try {
         const response = await axios.post('https://panel.myownfreehost.net:2087/xml-api/suspendacct.php', querystring.stringify({
