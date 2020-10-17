@@ -40,8 +40,7 @@ function isset(accessor) {
     }
 }
 exports.run = async(client, msg, args) => {
-if (!msg.member.hasPermission("ADMINISTRATOR"))
-return msg.channel.send(`**:x: | You don't have enough permissionns to run this command**`);
+if (!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(`**:x: | You don't have enough permissionns to run this command**`)
 let prefix = config.prefix;
 let domain = args[0]
 if (!domain){
