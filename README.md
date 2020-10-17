@@ -16,6 +16,6 @@ A powerful library for interacting with the Discord API.
 [Website](https://discord.js.org)
 
 ## Getting started
-To get install all needed packages, use `npm install`. You **must** put a Discord **bot** token in `config.json` and your **mofh username and key** in the .env file. Once you've done that make sure to whitelist the IP on mofh. You can use `npm start` to start the bot.
+To get install all needed packages, use `npm install`. You **must** put a Discord **bot** token in `config.json` and make sure to rename `dotenv` to `.env` and enter your **mofh username and key** in the .env file. Once you've done that make sure to whitelist the IP on mofh. You can use `npm start` to start the bot.
 
 > Do not put a user account token in `config.json`. [Selfbotting is against Discord's Terms Of Services and you risk account termination](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots) by using one.
