@@ -48,19 +48,7 @@ let password = args[1]
 let email = args[2]
 let domain = args[3]
 let plan = args[4]
-if (!username){
-  return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}createaccount [username] [password] [email] [domain] [plan]\` - Example \`${prefix}createaccount lebyydev lebyyiscool lebyy@domain.com lebyy.mydomain.com myplan\`**`)
-}
-if (!password){
-  return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}createaccount [username] [password] [email] [domain] [plan]\` - Example \`${prefix}createaccount lebyydev lebyyiscool lebyy@domain.com lebyy.mydomain.com myplan\`**`)
-}
-if (!email){
-  return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}createaccount [username] [password] [email] [domain] [plan]\` - Example \`${prefix}createaccount lebyydev lebyyiscool lebyy@domain.com lebyy.mydomain.com myplan\`**`)
-}
-if (!domain){
-  return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}createaccount [username] [password] [email] [domain] [plan]\` - Example \`${prefix}createaccount lebyydev lebyyiscool lebyy@domain.com lebyy.mydomain.com myplan\`**`)
-}
-if (!plan){
+if (!username || !password || !email || !domain || !plan){
   return msg.channel.send(`**:x: | Please follow this format** **\`${prefix}createaccount [username] [password] [email] [domain] [plan]\` - Example \`${prefix}createaccount lebyydev lebyyiscool lebyy@domain.com lebyy.mydomain.com myplan\`**`)
 }
     var result = null;
