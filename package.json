@@ -9,7 +9,7 @@
   "author": "lebyydev",
   "license": "The Unlicense",
   "dependencies": {
-    "discord.js": "^12.2.0",
+    "discord.js": "^12.4.0",
     "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "querystring": "^0.2.0",
